@@ -1,0 +1,7 @@
+^\.DS_Store$
+^\.git$
+^\.gitignore$
+^\.Rhistory$
+^.*\.Rproj$
+^\.Rproj\.user$
+^README.md$

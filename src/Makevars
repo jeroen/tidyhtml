@@ -1,0 +1,20 @@
+PKG_CPPFLAGS = -Iinclude -Ilibtidy
+PKG_LIBS = -Llibtidy -lstattidy
+
+LIBTIDY = libtidy/access.o libtidy/alloc.o libtidy/attrdict.o libtidy/attrs.o libtidy/buffio.o \
+		libtidy/charsets.o libtidy/clean.o libtidy/config.o libtidy/entities.o libtidy/fileio.o \
+		libtidy/gdoc.o libtidy/istack.o libtidy/language.o libtidy/lexer.o libtidy/mappedio.o \
+		libtidy/message.o libtidy/messageobj.o libtidy/parser.o libtidy/pprint.o libtidy/sprtf.o \
+		libtidy/streamio.o libtidy/tagask.o libtidy/tags.o libtidy/tidylib.o libtidy/tmbstr.o libtidy/utf8.o
+
+all: clean
+
+STATLIB = libtidy/libstattidy.a
+
+$(SHLIB): $(STATLIB)
+
+$(STATLIB): $(LIBTIDY)
+	$(AR) rcs $(STATLIB) $(LIBTIDY)
+
+clean:
+	rm -f $(LIBTIDY) $(SHLIB) $(OBJECTS) $(STATLIB)
