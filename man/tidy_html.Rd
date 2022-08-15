@@ -4,7 +4,10 @@
 \alias{tidy_html}
 \title{Tidy up HTML}
 \usage{
-tidy_html(str)
+tidy_html(file)
+}
+\arguments{
+\item{file}{path to html file}
 }
 \description{
 Cleans up HTML and also returns a list of warnings.

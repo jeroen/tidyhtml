@@ -3,7 +3,7 @@
 #' Cleans up HTML and also returns a list of warnings.
 #'
 #' @export
-#' @param file path
+#' @param file path to html file
 #' @useDynLib tidyhtml C_tidy_html
 tidy_html <- function(file){
   file <- normalizePath(file, mustWork = TRUE)
