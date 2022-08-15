@@ -1,13 +1,14 @@
 Package: tidyhtml
 Type: Package
 Title: Corrects and cleans up HTML documents by fixing markup errors and upgrading 
-    legacy code to modern standards.
+    legacy code to modern standards
 Version: 0.1.0
 Authors@R: c(
     person("Jeroen", "Ooms", ,"jeroen@berkeley.edu", role = c("aut", "cre"),
       comment = c(ORCID = "0000-0002-4035-0289")),
     person("World Wide Web Consortium", role = "cph", comment = "Bundled libtidy code"))
-Description: Bindings to libtidy: the underlying library of the tidy-html utility. 
+Description: Bindings to libtidy <https://www.html-tidy.org/>: the underlying library 
+    of the tidy-html utility from W3C.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

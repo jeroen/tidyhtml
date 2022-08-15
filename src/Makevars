@@ -7,7 +7,7 @@ LIBTIDY = libtidy/access.o libtidy/alloc.o libtidy/attrdict.o libtidy/attrs.o li
 		libtidy/message.o libtidy/messageobj.o libtidy/parser.o libtidy/pprint.o libtidy/sprtf.o \
 		libtidy/streamio.o libtidy/tagask.o libtidy/tags.o libtidy/tidylib.o libtidy/tmbstr.o libtidy/utf8.o
 
-all: clean
+#all: clean
 
 STATLIB = libtidy/libstattidy.a
 
